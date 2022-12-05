@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['195.158.1.149']
 
 CSRF_TRUSTED_ORIGINS = ['https://tilimuz.airi.uz']
 
