@@ -1,7 +1,7 @@
 import random
 
 from django.contrib.auth.models import User
-
+import re
 import autocorrector
 import json
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
@@ -12,7 +12,7 @@ import front.translit_file, front.translit_text
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from .serializers import FixWordSerializer
-import re
+from front.translit_text import to_cyrillic, to_latin
 from .utils import GetAddressApiView
 from .serializers import MyFileSerializer, MyTextSerializer, MyOutFileSerializer, NameofTopSerializer, \
     TypeFastOutSerializer, TypeFastSerializer, NameofTop, UserOutSerializer, UserSerializer, TextStatisticSerializer
@@ -32,9 +32,10 @@ class ChangeTextAPIView(GetAddressApiView):
         serializer.is_valid(raise_exception=True)
         a = serializer.validated_data.get('data')
         t = serializer.validated_data.get('type')
-        t = '1' if t in '1' else t == '0'
-        incorrect_words = [re.sub(r'[\.\,\:$]', r'', x) for x in a.split(' ') if autocorrector.check(x) == False]
-        result = front.translit_text.to_cyrillic(a) if t == '1' else front.translit_text.to_latin(a)
+        translate = to_cyrillic if t=='1' else to_latin
+
+        incorrect_words = [re.sub(r'[\.\,\:$]', r'', translate(x)) for x in a.split(' ') if autocorrector.check(x) == False]
+        result = translate(a)
         content = {'text': result, 'incorrect_words': incorrect_words}
         return HttpResponse(json.dumps(content), content_type='application/json')
 
