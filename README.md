@@ -3,11 +3,13 @@
 Using localhost.
 
 POST localhost:8000/api/change/
+
 body:
 {
     "data": "Mening ismim Samandar",
     "type":"1"
 }
+
 response:
 {
     "text": "Менинг исмим Самандар",
