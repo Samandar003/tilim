@@ -18,6 +18,33 @@ response:
     "incorrect_words": []
 }
 ```
+
+
+POST `localhost:8000/api/fix/`
+
+body:
+```
+{
+    "type":0,
+    "word":"hayjon"
+}
+```
+
+response:    # recommending me some correct words for "word"
+```
+{
+    "recommended": [
+        "hayon",
+        "hayajon",
+        "hayvon",
+        "hayron",
+        "ayajon",
+        "hamrayon",
+        "hamyon"
+    ]
+}
+```
+
 POST `http://127.0.0.1:8000/api/changefile/` - to convert text of documents into latin or crylic
 
 
@@ -112,30 +139,4 @@ response:
     "text": "O‘zbekistonda sezilarli ko‘p energiya ishlatuvchi xonadonlarni subsidiyalash qisqaradi\n1 noyabrdan boshlab, xonadonlarning oylik energiya iste’moli 1000 kWhdan oshgan taqdirda, bu miqdordan ortiq hajmdagi energiya uchun 2 barobardan 4 barobargacha oshirilgan tariflarda hisob-kitob qilinadi. Bu tartib respublikadagi 7,6 millionta xonadonning qariyb 150"
 }
 ```
-
-POST `localhost:8000/api/fix/`
-
-body:
-```
-{
-    "type":0,
-    "word":"hayjon"
-}
-```
-
-response:    # recommending me some correct words
-```
-{
-    "recommended": [
-        "hayon",
-        "hayajon",
-        "hayvon",
-        "hayron",
-        "ayajon",
-        "hamrayon",
-        "hamyon"
-    ]
-}
-```
-
 
