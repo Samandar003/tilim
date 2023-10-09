@@ -19,6 +19,7 @@ response:
 }
 ```
 POST `http://127.0.0.1:8000/api/changefile/` - to convert text of documents into latin or crylic
+
 body:
 ```
 {
@@ -33,6 +34,7 @@ response:
 }
 ```
 POST `localhost:8000/api/gettext/` - to get text for checking typing speed
+
 body:
 ```
 {
@@ -47,6 +49,7 @@ response:
 }
 ```
 POST `localhost:8000/api/typefast/` - type previously generated text and check speed
+
 body:
 ```
 {
@@ -69,6 +72,7 @@ response:
 }
 ```
 POST `localhost:8000/auth/session/`
+
 body:
 ```
 {
@@ -88,6 +92,7 @@ response:
 }
 ```
 POST `local`
+
 body:
 ```
 {
