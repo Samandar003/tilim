@@ -78,20 +78,10 @@ body:
     "text":"O‘zbekistonda sezilarli ko‘p energiya ishlatuvchi xonadonlarni subsidiyalash qisqaradi
 1 noyabrdan boshlab, xonadonlarning oylik energiya iste’moli 1000 kWhdan oshgan taqdirda, bu miqdordan ortiq hajmdagi energiya uchun 2 barobardan 4 barobargacha oshirilgan tariflarda hisob-kitob qilinadi. Bu tartib respublikadagi 7,6 millionta xonadonning qariyb 150 "
 }
-
-example
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-
-
-
-
 response:
 {
     "id": 2,
     "text": "O‘zbekistonda sezilarli ko‘p energiya ishlatuvchi xonadonlarni subsidiyalash qisqaradi\n1 noyabrdan boshlab, xonadonlarning oylik energiya iste’moli 1000 kWhdan oshgan taqdirda, bu miqdordan ortiq hajmdagi energiya uchun 2 barobardan 4 barobargacha oshirilgan tariflarda hisob-kitob qilinadi. Bu tartib respublikadagi 7,6 millionta xonadonning qariyb 150"
 }
+
+
