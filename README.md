@@ -2,7 +2,7 @@
 # Api documentation
 Using localhost.
 
-POST localhost:8000/api/change/
+POST `localhost:8000/api/change/`
 
 body:
 {
@@ -16,7 +16,7 @@ response:
     "incorrect_words": []
 }
 
-POST http://127.0.0.1:8000/api/changefile/ - to convert text of documents into latin or crylic
+POST `http://127.0.0.1:8000/api/changefile/` - to convert text of documents into latin or crylic
 body:
 {
   "in_file":"sample.txt",
@@ -27,7 +27,7 @@ response:
     "out_file":"1_sample.txt"
 }
 
-POST localhost:8000/api/gettext/ - to get text for checking typing speed
+POST `localhost:8000/api/gettext/` - to get text for checking typing speed
 body:
 {
     "t":0
@@ -38,7 +38,7 @@ response:
     "text": "Vazirlik rektorlarni saylashga tayyor emas: tayyor bo‘lishi uchun yana 30 yil kerakmi? Olimlar 5 yillik anomal yozdan ogohlantirdi: energetika islohoti kechiktirilgani qimmatga tushmaydimi? Alisher Sultonovga lavozim berilgani sir saqlandi: bu uning salbiy imiji bilan bog‘liqmi? Yakunlanayotgan haftaning asosiy xabarlari – Kun.uz dayjestida."
 }
 
-POST localhost:8000/api/typefast/ - type previously generated text and check speed
+POST `localhost:8000/api/typefast/` - type previously generated text and check speed
 body:
 {
     "text_id":1,
@@ -57,7 +57,7 @@ response:
     "chars": 291
 }
 
-POST localhost:8000/auth/session/
+POST `localhost:8000/auth/session/`
 body:
 {
     "username":"admin",
