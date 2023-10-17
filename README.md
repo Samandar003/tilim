@@ -4,7 +4,7 @@ Using localhost.
 if t or type is 0 it means latin alphabet else if t or type is 1, alphabet is crylic
 Prereqisites:
 
-`pip install django djangorestframework', `pip install python-pptx`, `pip install python-docx`
+`pip install django djangorestframework`, `pip install python-pptx`, `pip install python-docx`
 
 POST `localhost:8000/api/change/`
 
