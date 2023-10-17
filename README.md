@@ -1,6 +1,7 @@
 # tilim
 # Api documentation
 Using localhost.
+if t or type is 0 it means latin alphabet else if t or type is 1, alphabet is crylic
 
 POST `localhost:8000/api/change/`
 
